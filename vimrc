@@ -30,7 +30,7 @@ set so=4
 set nu
 
 "Don't show toolbar
-set guioptions-=T
+set guioptions+=l guioptions-=T guioptions-=r
 
 "Use full colors in a terminal
 "set t_Co=256
