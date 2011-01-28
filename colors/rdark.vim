@@ -15,16 +15,13 @@ set background=dark
 
 hi clear
 if exists("syntax_on")
-        syntax reset
+	syntax reset
 endif
 
 let colors_name = "rdark"
 
 " Current Line
-if exists('rdark_current_line') && rdark_current_line == 1
-        set cursorline
-        hi CursorLine guibg=#191f21
-endif
+hi CursorLine guibg=#191f21
 
 " Default Colors
 hi Normal guifg=#babdb6 guibg=#1e2426

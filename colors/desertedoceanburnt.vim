@@ -26,6 +26,8 @@ let g:colors_name="desertedoceanburnt"
 
 hi Normal	guifg=#FFFAFD guibg=#13232d
 hi Cursor	guibg=#204769 guifg=#A0BaBa
+hi CursorLine guibg=#1b3241
+hi CursorColumn guibg=#1f3b4d
 "hi CursorIM
 
 " syntax highlighting

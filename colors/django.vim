@@ -18,10 +18,12 @@ endif
 let colors_name = "django"
 
 " Default Colors
-hi Normal       guifg=#f8f8f8   guibg=#0b2f20
+hi Normal       guifg=#f8f8f8   guibg=#0f3f2b
 hi NonText      guifg=#245032   guibg=NONE
 hi SpecialKey   guifg=#245032   guibg=NONE
 hi Cursor       guibg=#336242
+hi CursorLine   guibg=#0a3523
+hi CursorColumn guibg=#0a3523
 hi lCursor      guibg=#336242
 
 " Search
