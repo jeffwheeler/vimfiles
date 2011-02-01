@@ -1,6 +1,13 @@
 "Fix encoding
 set enc=utf-8
 
+"Identify machine
+if (match(hostname(), "ews") >= 0)
+    let g:ews = "on"
+elseif (match(hostname(), "muta") >= 0)
+    let g:muta = "on"
+endif
+
 """UI
 
 "Set default window size
