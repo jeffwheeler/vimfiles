@@ -3,9 +3,9 @@ set enc=utf-8
 
 "Identify machine
 if (match(hostname(), "ews") >= 0)
-    let g:ews = "on"
+    let s:ews = "on"
 elseif (match(hostname(), "muta") >= 0)
-    let g:muta = "on"
+    let s:muta = "on"
 endif
 
 """UI
@@ -15,8 +15,8 @@ endif
 "set lines=46 columns=90
 
 "Don't show whitespace, but configure for when I want to (:set list! toggles)
-set lcs=eol:$,tab:➜\ ,trail:⨯
-"set list
+set lcs=eol:$,tab:➜\ ,trail:✖
+set nolist
 
 "Use a space as the vertical divider between windows
 set fillchars+=vert:\ 
