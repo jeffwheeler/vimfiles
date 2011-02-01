@@ -1,5 +1,5 @@
 "Fix encoding
-set encoding=utf-8
+set enc=utf-8
 
 """UI
 
@@ -8,7 +8,7 @@ set encoding=utf-8
 "set lines=46 columns=90
 
 "Don't show whitespace, but configure for when I want to (:set list! toggles)
-set listchars=eol:$,tab:➜\ ,trail:⨯
+set lcs=eol:$,tab:➜\ ,trail:⨯
 "set list
 
 "Use a space as the vertical divider between windows
@@ -17,8 +17,12 @@ set fillchars+=vert:\
 "Display wrap character before wrapped lines
 set showbreak=…
 
-"Nice dark color scheme
-colorscheme sienna
+"Color scheme, and bindings to change it quickly
+colorscheme autumnleaf
+
+map <F4>   :call NextColorScheme()<CR>
+map <S-F4> :call PreviousColorScheme()<CR>
+map <C-F4> :call RandomColorScheme()<CR>
 
 "Highlight the current line, but not the column
 set cursorline nocursorcolumn
