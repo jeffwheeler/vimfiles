@@ -4,7 +4,9 @@ set enc=utf-8
 "Identify machine
 if (match(hostname(), "ews") >= 0)
     let s:ews = "on"
+    let s:muta = "off"
 elseif (match(hostname(), "muta") >= 0)
+    let s:ews = "off"
     let s:muta = "on"
 endif
 
