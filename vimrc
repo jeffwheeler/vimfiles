@@ -56,6 +56,9 @@ set ruler
 
 "Use four spaces for tabs
 set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+if s:ews == "on"
+    set noexpandtab
+endif
 
 "Use filetype plugins
 filetype plugin indent on
