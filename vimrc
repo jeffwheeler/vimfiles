@@ -1,3 +1,7 @@
+"Setup pathogen
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 "Fix encoding
 set enc=utf-8
 
@@ -19,6 +23,7 @@ endif
 "Don't show whitespace, but configure for when I want to (:set list! toggles)
 set lcs=eol:$,tab:➜\ ,trail:✖
 set nolist
+map <F3> :set list!<CR>
 
 "Use a space as the vertical divider between windows
 set fillchars+=vert:\ 
