@@ -1,0 +1,15 @@
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = git://github.com/msanders/snipmate.vim.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+[submodule "bundle/change-color-scheme"]
+	path = bundle/change-color-scheme
+	url = https://github.com/vim-scripts/changeColorScheme.vim.git
+[submodule "bundle/javascript"]
+	path = bundle/javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule "bundle/vala"]
+	path = bundle/vala
+	url = https://github.com/DasIch/vim-vala.git
