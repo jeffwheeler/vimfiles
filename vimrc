@@ -69,8 +69,8 @@ set so=4
 "Show line numbers
 set nu
 
-"Don't show toolbar
-set guioptions+=l guioptions-=T guioptions-=r
+"Update GUI (left scrollbar, no tearoff menus, no toolbar, no right scrollbar)
+set guioptions+=l guioptions-=t guioptions-=T guioptions-=r
 
 "Use full colors in a terminal
 "set t_Co=256
@@ -101,3 +101,6 @@ let xml_use_xhtml=1
 "Support vala
 au BufRead,BufNewFile *.vala setfiletype vala
 au BufRead,BufNewFile *.vapi setfiletype vala
+
+"Tagbar
+nnoremap <silent> <F9> :TagbarToggle<CR>

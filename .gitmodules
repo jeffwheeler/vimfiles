@@ -13,3 +13,6 @@
 [submodule "bundle/vala"]
 	path = bundle/vala
 	url = https://github.com/DasIch/vim-vala.git
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = git://github.com/majutsushi/tagbar
