@@ -32,23 +32,8 @@ set fillchars+=vert:\
 set showbreak=…
 
 "Color scheme, and bindings to change it quickly
-let g:solarized_style = "light"
+set background=light
 colorscheme solarized
-
-function! ToggleBackground()
-    if (g:solarized_style=="dark")
-        let g:solarized_style="light"
-        colorscheme solarized
-    else
-        let g:solarized_style="dark"
-        colorscheme solarized
-    endif
-endfunction
-
-command! Togbg call ToggleBackground()
-nnoremap <F5> :call ToggleBackground()<CR>
-inoremap <F5> <ESC>:call ToggleBackground()<CR>a
-vnoremap <F5> <ESC>:call ToggleBackground()<CR>
 
 function! AndPrintScheme(G)
     call a:G()
@@ -59,6 +44,8 @@ endfunction
 map <F4>   :call AndPrintScheme(function("NextColorScheme"))<CR>
 map <S-F4> :call AndPrintScheme(function("PreviousColorScheme"))<CR>
 map <C-F4> :call AndPrintScheme(function("RandomColorScheme"))<CR>
+
+call togglebg#map("<F5>")
 
 "Highlight the current line, but not the column
 set cursorline nocursorcolumn
@@ -103,4 +90,4 @@ au BufRead,BufNewFile *.vala setfiletype vala
 au BufRead,BufNewFile *.vapi setfiletype vala
 
 "Tagbar
-nnoremap <silent> <F9> :TagbarToggle<CR>
+map <silent> <F9> :TagbarToggle<CR>
