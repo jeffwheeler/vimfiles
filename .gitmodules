@@ -3,7 +3,7 @@
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = git://github.com/msanders/snipmate.vim.git
-    ignore = untracked
+	ignore = untracked
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree
@@ -19,7 +19,10 @@
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = git://github.com/majutsushi/tagbar
-    ignore = untracked
+	ignore = untracked
 [submodule "bundle/solarized"]
 	path = bundle/solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "bundle/LaTeX-Box"]
+	path = bundle/LaTeX-Box
+	url = git://github.com/LaTeX-Box-Team/LaTeX-Box.git
