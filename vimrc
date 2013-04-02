@@ -12,6 +12,9 @@ if (match(hostname(), "ews") >= 0)
 elseif (match(hostname(), "muta") >= 0)
     let s:ews = "off"
     let s:muta = "on"
+else
+    let s:ews = "off"
+    let s:muta = "on"
 endif
 
 """UI
