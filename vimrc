@@ -35,8 +35,10 @@ set fillchars+=vert:\
 set showbreak=…
 
 "Color scheme, and bindings to change it quickly
-set background=light
-colorscheme solarized
+if has("gui_running")
+    set background=light
+    colorscheme solarized
+endif
 
 function! AndPrintScheme(G)
     call a:G()
