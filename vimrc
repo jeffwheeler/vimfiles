@@ -37,7 +37,7 @@ set showbreak=…
 "Color scheme, and bindings to change it quickly
 if has("gui_running")
     set background=light
-    colorscheme solarized
+    colorscheme bclear
 endif
 
 function! AndPrintScheme(G)
