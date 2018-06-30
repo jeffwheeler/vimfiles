@@ -103,9 +103,6 @@ let xml_use_xhtml=1
 au BufRead,BufNewFile *.vala setfiletype vala
 au BufRead,BufNewFile *.vapi setfiletype vala
 
-"Spice
-au BufRead,BufNewFile *.lib setfiletype spice
-
 "LaTeX
 let g:Tex_MultipleCompileFormats = 'bib,pdf'
 let g:Tex_ViewRule_pdf = 'Preview'
