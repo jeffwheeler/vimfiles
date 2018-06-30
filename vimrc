@@ -33,11 +33,12 @@ set fillchars+=vert:\
 
 "Display wrap character before wrapped lines
 set showbreak=…
+set linebreak
 
 "Color scheme, and bindings to change it quickly
 if has("gui_running")
-    set background=light
-    colorscheme solarized
+    set background=dark
+    colorscheme gruvbox
 endif
 
 function! AndPrintScheme(G)
@@ -73,6 +74,14 @@ set guioptions+=l guioptions-=t guioptions-=T guioptions-=r
 "Show the ruler
 set ruler
 
+"Hide extra files in NERDTree
+let NERDTreeIgnore = ['\.pyc$']
+
+" Enable powerline
+set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim/
+set laststatus=2 " Always show statusline
+set guifont=Meslo\ LG\ M\ DZ\ Regular\ for\ Powerline:h11
+
 """Editing
 
 "Use four spaces for tabs
@@ -93,6 +102,13 @@ let xml_use_xhtml=1
 "Support vala
 au BufRead,BufNewFile *.vala setfiletype vala
 au BufRead,BufNewFile *.vapi setfiletype vala
+
+"Spice
+au BufRead,BufNewFile *.lib setfiletype spice
+
+"LaTeX
+let g:Tex_MultipleCompileFormats = 'bib,pdf'
+let g:Tex_ViewRule_pdf = 'Preview'
 
 "Tagbar
 map <silent> <F9> :TagbarToggle<CR>
