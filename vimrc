@@ -109,3 +109,6 @@ let g:Tex_ViewRule_pdf = 'Preview'
 
 "Tagbar
 map <silent> <F9> :TagbarToggle<CR>
+
+"Code search with Ag, "the silver searcher"
+let g:ackprg = 'ag --nogroup --nocolor --column'
