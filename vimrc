@@ -37,8 +37,8 @@ set linebreak
 
 "Color scheme, and bindings to change it quickly
 if has("gui_running")
-    set background=dark
-    colorscheme gruvbox
+    set background=light
+    colorscheme tutticolori
 endif
 
 function! AndPrintScheme(G)
@@ -52,6 +52,9 @@ map <S-F4> :call AndPrintScheme(function("PreviousColorScheme"))<CR>
 map <C-F4> :call AndPrintScheme(function("RandomColorScheme"))<CR>
 
 call togglebg#map("<F5>")
+
+"Color the end tag in XML the same as the start tag
+hi link xmlEndTag xmlTag
 
 "Highlight the current line, but not the column
 set cursorline nocursorcolumn
@@ -112,3 +115,7 @@ map <silent> <F9> :TagbarToggle<CR>
 
 "Code search with Ag, "the silver searcher"
 let g:ackprg = 'ag --nogroup --nocolor --column'
+
+"Case insensitive searching
+set ignorecase
+set smartcase " Case insensitive unless there's a capital letter in the query
