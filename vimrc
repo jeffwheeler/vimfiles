@@ -5,18 +5,6 @@ call pathogen#helptags()
 "Fix encoding
 set enc=utf-8
 
-"Identify machine
-if (match(hostname(), "ews") >= 0)
-    let s:ews = "on"
-    let s:muta = "off"
-elseif (match(hostname(), "muta") >= 0)
-    let s:ews = "off"
-    let s:muta = "on"
-else
-    let s:ews = "off"
-    let s:muta = "on"
-endif
-
 """UI
 
 "Set default window size
@@ -35,10 +23,13 @@ set fillchars+=vert:\
 set showbreak=…
 set linebreak
 
+" Enable powerline
+set guifont=Meslo\ LG\ M\ DZ\ Regular\ for\ Powerline:h11
+
 "Color scheme, and bindings to change it quickly
 if has("gui_running")
-    set background=light
-    colorscheme tutticolori
+    set background=dark
+    colorscheme nord
 endif
 
 function! AndPrintScheme(G)
@@ -80,18 +71,10 @@ set ruler
 "Hide extra files in NERDTree
 let NERDTreeIgnore = ['\.pyc$']
 
-" Enable powerline
-set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim/
-set laststatus=2 " Always show statusline
-set guifont=Meslo\ LG\ M\ DZ\ Regular\ for\ Powerline:h11
-
 """Editing
 
 "Use four spaces for tabs
-set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
-if s:ews == "on"
-    set noexpandtab
-endif
+set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 
 "Use filetype plugins
 filetype plugin indent on

@@ -34,6 +34,7 @@ highlight TODO                      guifg=#000000 guibg=#eeeeee gui=bold,italic
 highlight Comment                   guifg=#999999 guibg=#eeeeee gui=italic
 highlight Constant                  guifg=#d44950 guibg=NONE
 highlight Error                     guifg=#f9f2ce guibg=#f9323a
+highlight ErrorMsg                  guifg=#f9f2ce guibg=#f9323a
 highlight Identifier                guifg=#3a1d72 guibg=NONE
 highlight Number                    guifg=#7653c1 guibg=#f3f2ff
 highlight PreProc                   guifg=#222222 guibg=#eeeeee
@@ -47,3 +48,8 @@ highlight Underlined                guifg=#2f4f6f guibg=NONE    gui=underline
 
 highlight htmlHead                                guibg=#ffffff
 highlight javaScript                guifg=#434343 guibg=#ffffff
+
+" nerdtree
+highlight NerdTreeUp                guifg=#999999 guibg=NONE gui=italic
+highlight NerdTreeDir               guifg=#2f6f9f guibg=NONE
+highlight NerdTreeDirSlash          guifg=#999999 guibg=NONE gui=italic
