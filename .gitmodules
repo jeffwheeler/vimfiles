@@ -38,9 +38,6 @@
 [submodule "bundle/vim-javascript"]
 	path = pack/my-plugins/start/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
-[submodule "bundle/vim-jsx"]
-	path = pack/my-plugins/start/vim-jsx
-	url = https://github.com/mxw/vim-jsx.git
 [submodule "bundle/nord-vim"]
 	path = pack/my-plugins/start/nord-vim
 	url = https://github.com/arcticicestudio/nord-vim

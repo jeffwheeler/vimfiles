@@ -25,7 +25,7 @@ set guifont=Meslo\ LG\ M\ DZ\ Regular\ for\ Powerline:h11
 "Color scheme, and bindings to change it quickly
 if has("gui_running")
     set background=dark
-    colorscheme seoul256
+    colorscheme gruvbox
 endif
 
 function! AndPrintScheme(G)
