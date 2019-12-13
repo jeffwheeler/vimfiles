@@ -1,52 +1,52 @@
 # Only ignore untracked files on submodules where it's actually necessary.
 # Add this to those repos: ignore = untracked
 [submodule "bundle/snipmate"]
-	path = bundle/snipmate
+	path = pack/my-plugins/start/snipmate
 	url = git://github.com/msanders/snipmate.vim.git
 	ignore = untracked
 [submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
+	path = pack/my-plugins/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree
 [submodule "bundle/change-color-scheme"]
-	path = bundle/change-color-scheme
+	path = pack/my-plugins/start/change-color-scheme
 	url = https://github.com/vim-scripts/changeColorScheme.vim.git
 [submodule "bundle/javascript"]
-	path = bundle/javascript
+	path = pack/my-plugins/start/javascript
 	url = https://github.com/pangloss/vim-javascript.git
 [submodule "bundle/vala"]
 	path = bundle/vala
 	url = https://github.com/DasIch/vim-vala.git
 [submodule "bundle/tagbar"]
-	path = bundle/tagbar
+	path = pack/my-plugins/start/tagbar
 	url = git://github.com/majutsushi/tagbar
 	ignore = untracked
 [submodule "bundle/solarized"]
-	path = bundle/solarized
+	path = pack/my-plugins/start/solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "bundle/dracula-theme"]
-	path = bundle/dracula-theme
+	path = pack/my-plugins/start/dracula-theme
 	url = https://github.com/dracula/vim.git
 [submodule "bundle/gruvbox.git"]
-	path = bundle/gruvbox.git
+	path = pack/my-plugins/start/gruvbox.git
 	url = https://github.com/morhetz/gruvbox.git
 [submodule "bundle/ack.vim"]
-	path = bundle/ack.vim
+	path = pack/my-plugins/start/ack.vim
 	url = https://github.com/mileszs/ack.vim.git
 [submodule "bundle/Base2Tone-vim"]
-	path = bundle/Base2Tone-vim
+	path = pack/my-plugins/start/Base2Tone-vim
 	url = https://github.com/atelierbram/Base2Tone-vim.git
 [submodule "bundle/vim-javascript"]
-	path = bundle/vim-javascript
+	path = pack/my-plugins/start/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
 [submodule "bundle/vim-jsx"]
-	path = bundle/vim-jsx
+	path = pack/my-plugins/start/vim-jsx
 	url = https://github.com/mxw/vim-jsx.git
 [submodule "bundle/nord-vim"]
-	path = bundle/nord-vim
+	path = pack/my-plugins/start/nord-vim
 	url = https://github.com/arcticicestudio/nord-vim
 [submodule "bundle/vim-airline"]
-	path = bundle/vim-airline
+	path = pack/my-plugins/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline
 [submodule "bundle/seoul256"]
-	path = bundle/seoul256
+	path = pack/my-plugins/start/seoul256
 	url = https://github.com/junegunn/seoul256.vim

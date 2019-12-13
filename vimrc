@@ -1,7 +1,3 @@
-"Setup pathogen
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
-
 "Fix encoding
 set enc=utf-8
 
@@ -29,7 +25,7 @@ set guifont=Meslo\ LG\ M\ DZ\ Regular\ for\ Powerline:h11
 "Color scheme, and bindings to change it quickly
 if has("gui_running")
     set background=dark
-    colorscheme nord
+    colorscheme seoul256
 endif
 
 function! AndPrintScheme(G)
@@ -41,8 +37,6 @@ endfunction
 map <F4>   :call AndPrintScheme(function("NextColorScheme"))<CR>
 map <S-F4> :call AndPrintScheme(function("PreviousColorScheme"))<CR>
 map <C-F4> :call AndPrintScheme(function("RandomColorScheme"))<CR>
-
-call togglebg#map("<F5>")
 
 "Color the end tag in XML the same as the start tag
 hi link xmlEndTag xmlTag
@@ -84,10 +78,6 @@ let xml_use_xhtml=1
 
 "Fix folding
 "set foldmethod=syntax
-
-"Support vala
-au BufRead,BufNewFile *.vala setfiletype vala
-au BufRead,BufNewFile *.vapi setfiletype vala
 
 "LaTeX
 let g:Tex_MultipleCompileFormats = 'bib,pdf'
