@@ -24,7 +24,7 @@ set showbreak=…
 set linebreak
 
 " Enable powerline
-set guifont=Meslo\ LG\ M\ DZ\ Regular\ for\ Powerline:h11
+"set guifont=Meslo\ LG\ M\ DZ\ Regular\ for\ Powerline:h11
 
 "Color scheme, and bindings to change it quickly
 if has("gui_running")
@@ -71,8 +71,14 @@ let NERDTreeIgnore = ['\.pyc$']
 
 """Editing
 
-"Use four spaces for tabs
-set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+"Indentation
+set tabstop=4      "Max width of tab in spaces
+set shiftwidth=4   "Size of an indent
+set expandtab      "Tab and :retab inserts spaces
+set smarttab       "Tab goes to next indent block
+set softtabstop=0  "No combo of tabs and spaces
+set autoindent     "Start next line at previous indent
+set smartindent    "Indent after brackets and known keywords
 
 "Use filetype plugins
 filetype plugin indent on
@@ -100,3 +106,6 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 "Case insensitive searching
 set ignorecase
 set smartcase " Case insensitive unless there's a capital letter in the query
+
+"Enable command-line tab completion
+set wildmenu
