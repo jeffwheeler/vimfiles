@@ -1,3 +1,7 @@
+"Setup pathogen
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 "Fix encoding
 set enc=utf-8
 
@@ -78,6 +82,10 @@ let xml_use_xhtml=1
 
 "Fix folding
 "set foldmethod=syntax
+
+"Support vala
+au BufRead,BufNewFile *.vala setfiletype vala
+au BufRead,BufNewFile *.vapi setfiletype vala
 
 "LaTeX
 let g:Tex_MultipleCompileFormats = 'bib,pdf'
