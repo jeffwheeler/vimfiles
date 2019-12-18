@@ -69,6 +69,9 @@ set ruler
 "Hide extra files in NERDTree
 let NERDTreeIgnore = ['\.pyc$']
 
+"Hide Bookmarks label and 'Press ? for help' text
+let NERDTreeMinimalUI=1
+
 """Editing
 
 "Indentation
