@@ -23,9 +23,11 @@ set fillchars+=vert:\
 set showbreak=…
 set linebreak
 
-"Fonts
-set macligatures
 set guifont=InputMono-Regular:h11
+" set macligatures
+
+" Enable powerline
+"set guifont=Meslo\ LG\ M\ DZ\ Regular\ for\ Powerline:h11
 
 "Color scheme, and bindings to change it quickly
 if has("gui_running")
@@ -42,8 +44,6 @@ endfunction
 map <F4>   :call AndPrintScheme(function("NextColorScheme"))<CR>
 map <S-F4> :call AndPrintScheme(function("PreviousColorScheme"))<CR>
 map <C-F4> :call AndPrintScheme(function("RandomColorScheme"))<CR>
-
-call togglebg#map("<F5>")
 
 "Color the end tag in XML the same as the start tag
 hi link xmlEndTag xmlTag
@@ -72,10 +72,19 @@ set ruler
 "Hide extra files in NERDTree
 let NERDTreeIgnore = ['\.pyc$']
 
+"Hide Bookmarks label and 'Press ? for help' text
+let NERDTreeMinimalUI=1
+
 """Editing
 
-"Use four spaces for tabs
-set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+"Indentation
+set tabstop=4      "Max width of tab in spaces
+set shiftwidth=4   "Size of an indent
+set expandtab      "Tab and :retab inserts spaces
+set smarttab       "Tab goes to next indent block
+set softtabstop=0  "No combo of tabs and spaces
+set autoindent     "Start next line at previous indent
+set smartindent    "Indent after brackets and known keywords
 
 "Use filetype plugins
 filetype plugin indent on
@@ -103,3 +112,6 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 "Case insensitive searching
 set ignorecase
 set smartcase " Case insensitive unless there's a capital letter in the query
+
+"Enable command-line tab completion
+set wildmenu
