@@ -23,13 +23,14 @@ set fillchars+=vert:\
 set showbreak=…
 set linebreak
 
-" Enable powerline
-set guifont=Meslo\ LG\ M\ DZ\ Regular\ for\ Powerline:h11
+"Fonts
+set macligatures
+set guifont=InputMono-Regular:h11
 
 "Color scheme, and bindings to change it quickly
 if has("gui_running")
     set background=dark
-    colorscheme nord
+    colorscheme onedark
 endif
 
 function! AndPrintScheme(G)
