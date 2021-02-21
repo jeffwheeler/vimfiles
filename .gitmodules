@@ -41,7 +41,7 @@
 	path = pack/plugins/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline
 [submodule "bundle/onedark.vim"]
-	path = pack/plugins/start/onedark.vim
+	path = pack/plugins/opt/onedark.vim
 	url = git@github.com:joshdick/onedark.vim.git
 [submodule "bundle/seoul256"]
 	path = pack/plugins/start/seoul256

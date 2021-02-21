@@ -1,6 +1,11 @@
 "Fix encoding
 set enc=utf-8
 
+"""Packages
+
+" Only load packages I want
+packadd! onedark.vim
+
 """UI
 
 "Don't show whitespace, but configure for when I want to (:set list! toggles)
