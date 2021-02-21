@@ -1,15 +1,7 @@
-"Setup pathogen
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
-
 "Fix encoding
 set enc=utf-8
 
 """UI
-
-"Set default window size
-"winpos 10 10
-"set lines=46 columns=90
 
 "Don't show whitespace, but configure for when I want to (:set list! toggles)
 set lcs=eol:$,tab:➜\ ,trail:✖
@@ -94,14 +86,6 @@ let xml_use_xhtml=1
 
 "Fix folding
 "set foldmethod=syntax
-
-"Support vala
-au BufRead,BufNewFile *.vala setfiletype vala
-au BufRead,BufNewFile *.vapi setfiletype vala
-
-"LaTeX
-let g:Tex_MultipleCompileFormats = 'bib,pdf'
-let g:Tex_ViewRule_pdf = 'Preview'
 
 "Tagbar
 map <silent> <F9> :TagbarToggle<CR>

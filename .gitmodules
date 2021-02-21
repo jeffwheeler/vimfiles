@@ -1,52 +1,54 @@
 # Only ignore untracked files on submodules where it's actually necessary.
 # Add this to those repos: ignore = untracked
-[submodule "bundle/snipmate"]
-	path = bundle/snipmate
-	url = git://github.com/msanders/snipmate.vim.git
-	ignore = untracked
 [submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
+	path = pack/plugins/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree
 [submodule "bundle/change-color-scheme"]
-	path = bundle/change-color-scheme
+	path = pack/plugins/start/change-color-scheme
 	url = https://github.com/vim-scripts/changeColorScheme.vim.git
 [submodule "bundle/javascript"]
-	path = bundle/javascript
+	path = pack/plugins/start/javascript
 	url = https://github.com/pangloss/vim-javascript.git
 [submodule "bundle/vala"]
 	path = bundle/vala
 	url = https://github.com/DasIch/vim-vala.git
 [submodule "bundle/tagbar"]
-	path = bundle/tagbar
+	path = pack/plugins/start/tagbar
 	url = git://github.com/majutsushi/tagbar
 	ignore = untracked
 [submodule "bundle/solarized"]
-	path = bundle/solarized
+	path = pack/plugins/start/solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "bundle/dracula-theme"]
-	path = bundle/dracula-theme
+	path = pack/plugins/start/dracula-theme
 	url = https://github.com/dracula/vim.git
 [submodule "bundle/gruvbox.git"]
-	path = bundle/gruvbox.git
+	path = pack/plugins/start/gruvbox.git
 	url = https://github.com/morhetz/gruvbox.git
 [submodule "bundle/ack.vim"]
-	path = bundle/ack.vim
+	path = pack/plugins/start/ack.vim
 	url = https://github.com/mileszs/ack.vim.git
 [submodule "bundle/Base2Tone-vim"]
-	path = bundle/Base2Tone-vim
+	path = pack/plugins/start/Base2Tone-vim
 	url = https://github.com/atelierbram/Base2Tone-vim.git
 [submodule "bundle/vim-javascript"]
-	path = bundle/vim-javascript
+	path = pack/plugins/start/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
 [submodule "bundle/nord-vim"]
-	path = bundle/nord-vim
+	path = pack/plugins/start/nord-vim
 	url = https://github.com/arcticicestudio/nord-vim
 [submodule "bundle/vim-airline"]
-	path = bundle/vim-airline
+	path = pack/plugins/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline
 [submodule "bundle/onedark.vim"]
-	path = bundle/onedark.vim
+	path = pack/plugins/start/onedark.vim
 	url = git@github.com:joshdick/onedark.vim.git
 [submodule "bundle/seoul256"]
-	path = bundle/seoul256
+	path = pack/plugins/start/seoul256
 	url = https://github.com/junegunn/seoul256.vim
+[submodule "bundle/vim-beancount"]
+	path = pack/plugins/start/vim-beancount
+	url = https://github.com/nathangrigg/vim-beancount.git
+[submodule "bundle/vim-go"]
+	path = pack/plugins/start/vim-go
+	url = https://github.com/fatih/vim-go.git
