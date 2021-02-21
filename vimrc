@@ -4,7 +4,7 @@ set enc=utf-8
 """Packages
 
 " Only load packages I want
-packadd! onedark.vim
+" packadd! onedark.vim
 
 """UI
 
@@ -29,7 +29,11 @@ set guifont=InputMono-Regular:h11
 "Color scheme, and bindings to change it quickly
 if has("gui_running")
     set background=dark
-    colorscheme onedark
+
+    " let ayucolor="light"
+    let ayucolor="mirage"
+    " let ayucolor="dark"
+    colorscheme ayu
 endif
 
 function! AndPrintScheme(G)
