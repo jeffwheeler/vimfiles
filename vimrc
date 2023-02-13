@@ -20,7 +20,7 @@ set fillchars+=vert:\
 set showbreak=…
 set linebreak
 
-set guifont=InputMono-Regular:h11
+" set guifont=InputMono-Regular:h11
 " set macligatures
 
 " Enable powerline
@@ -33,7 +33,7 @@ if has("gui_running")
     " let ayucolor="light"
     let ayucolor="mirage"
     " let ayucolor="dark"
-    colorscheme ayu
+    colorscheme dracula
 endif
 
 function! AndPrintScheme(G)
@@ -86,6 +86,8 @@ set smarttab       "Tab goes to next indent block
 set softtabstop=0  "No combo of tabs and spaces
 set autoindent     "Start next line at previous indent
 set smartindent    "Indent after brackets and known keywords
+
+autocmd FileType javascript setlocal sw=2 ts=2
 
 "Use filetype plugins
 filetype plugin indent on

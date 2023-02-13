@@ -12,10 +12,6 @@
 [submodule "bundle/vala"]
 	path = bundle/vala
 	url = https://github.com/DasIch/vim-vala.git
-[submodule "bundle/tagbar"]
-	path = pack/plugins/start/tagbar
-	url = git://github.com/majutsushi/tagbar
-	ignore = untracked
 [submodule "bundle/solarized"]
 	path = pack/plugins/start/solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
@@ -28,9 +24,6 @@
 [submodule "bundle/ack.vim"]
 	path = pack/plugins/start/ack.vim
 	url = https://github.com/mileszs/ack.vim.git
-[submodule "bundle/Base2Tone-vim"]
-	path = pack/plugins/start/Base2Tone-vim
-	url = https://github.com/atelierbram/Base2Tone-vim.git
 [submodule "bundle/vim-javascript"]
 	path = pack/plugins/start/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
@@ -40,9 +33,6 @@
 [submodule "bundle/vim-airline"]
 	path = pack/plugins/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline
-[submodule "bundle/onedark.vim"]
-	path = pack/plugins/opt/onedark.vim
-	url = git@github.com:joshdick/onedark.vim.git
 [submodule "bundle/seoul256"]
 	path = pack/plugins/start/seoul256
 	url = https://github.com/junegunn/seoul256.vim
@@ -55,6 +45,6 @@
 [submodule "pack/plugins/start/ayu-vim"]
 	path = pack/plugins/start/ayu-vim
 	url = git@github.com:ayu-theme/ayu-vim.git
-[submodule "/Users/jeff/.vim/pack/plugins/start/vim-toml"]
-	path = /Users/jeff/.vim/pack/plugins/start/vim-toml
-	url = https://github.com/cespare/vim-toml.git
+[submodule "pack/plugins/start/tagbar"]
+	path = pack/plugins/start/tagbar
+	url = https://github.com/preservim/tagbar.git
