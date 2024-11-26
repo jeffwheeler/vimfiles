@@ -1,8 +1,0 @@
-# Only ignore untracked files on submodules where it's actually necessary.
-# Add this to those repos: ignore = untracked
-[submodule "bundle/change-color-scheme"]
-	path = pack/plugins/start/change-color-scheme
-	url = https://github.com/vim-scripts/changeColorScheme.vim.git
-[submodule "bundle/vala"]
-	path = bundle/vala
-	url = https://github.com/DasIch/vim-vala.git
